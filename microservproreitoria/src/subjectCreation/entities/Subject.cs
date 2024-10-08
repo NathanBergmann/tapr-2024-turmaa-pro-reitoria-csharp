@@ -7,6 +7,6 @@ namespace microservproreitoria.src.subjectCreation.entities
 {
     public class Subject
     {
-        
+
     }
 }
