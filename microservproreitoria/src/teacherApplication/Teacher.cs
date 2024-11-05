@@ -7,7 +7,7 @@ namespace microservproreitoria.src.teacherApplication
 {
     public class Teacher
     {
-        private UUID id;
+        public Guid Id { get; set; } = Guid.NewGuid();
         private string Name { get; set; }
     }
 }
