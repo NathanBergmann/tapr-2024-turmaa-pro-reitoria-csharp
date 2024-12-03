@@ -1,0 +1,75 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+*.tlog
+*.vspscc
+
+# OS generated files
+[Dd]esktop.ini
+[Tt]humbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# DotNet SDK
+.dotnet/
+aspnet_client/
+
+# NuGet
+*.nupkg
+# The packages folder can be ignored if package restore is enabled
+**/packages/*
+# except build/, which is used as an MSBuild target
+!**/packages/build/
+# Uncomment if necessary
+#!**/packages/repositories.config
+
+# Rider
+.idea/
+.idea/*
+
+# Mac
+*.DS_Store
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tmp
+*.vcxproj.*
+*.vspscc
+.builds
+
+# Web-specific
+**/node_modules/
+**/bower_components/
