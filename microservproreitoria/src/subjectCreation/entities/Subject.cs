@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace microservproreitoria.src.subjectCreation.entities
+namespace microservproreitoria.src.SubjectCreation.Entities
 {
     public class Subject
     {

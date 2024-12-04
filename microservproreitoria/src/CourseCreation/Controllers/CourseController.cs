@@ -2,11 +2,11 @@ namespace microservproreitoria.CourseCreation.Controllers
 {
     [ApiController]
     [Route("/api/v1/[controller]")]
-    public class CurseController : ControllerBase
+    public class CourseController : ControllerBase
     {
-        private ICurseService _service;
+        private ICourseService _service;
 
-        public CurseController(ICurseService service)
+        public CourseController(ICourseService service)
         {
             this._service = service;
         }
@@ -19,31 +19,31 @@ namespace microservproreitoria.CourseCreation.Controllers
         }
 
         [HttpPost]
-        public async Task<IResult> Post(Curse curse)
+        public async Task<IResult> Post(Course Course)
         {
-            if (curse == null)
+            if (Course == null)
             {
                 return Results.BadRequest();
             }
 
-            var curseSalvo = await _service.SaveAsync(curse);
+            var CourseSalvo = await _service.SaveAsync(Course);
 
-            return Results.Ok(curseSalvo);
+            return Results.Ok(CourseSalvo);
         }
 
         [HttpPut("{id}")]
-        public async Task<IResult> Put(String id, [FromBody] Curse curse)
+        public async Task<IResult> Put(String id, [FromBody] Course Course)
         {
-            if (curse == null || id.Equals(String.Empty))
+            if (Course == null || id.Equals(String.Empty))
             {
                 return Results.BadRequest();
             }
-            curse = await _service.UpdateAsync(id, curse);
-            if (curse == null)
+            Course = await _service.UpdateAsync(id, Course);
+            if (Course == null)
             {
                 return Results.NotFound();
             }
-            return Results.Ok(curse);
+            return Results.Ok(Course);
         }
 
         [HttpDelete("{id}")]
@@ -53,10 +53,10 @@ namespace microservproreitoria.CourseCreation.Controllers
             {
                 return Results.BadRequest();
             }
-            var curse = await _service.DeleteAsync(id);
-            if (curse != null)
+            var Course = await _service.DeleteAsync(id);
+            if (Course != null)
             {
-                return Results.Ok(curse);
+                return Results.Ok(Course);
             }
             return Results.NotFound();
         }

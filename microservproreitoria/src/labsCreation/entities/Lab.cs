@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using microservproreitoria.src.subjectCreation.entities;
+using microservproreitoria.src.SubjectCreation.Entities;
 
-namespace microservproreitoria.src.labsCreation.entities
+namespace microservproreitoria.src.LabsCreation.Entities
 {
     public class Lab
     {
