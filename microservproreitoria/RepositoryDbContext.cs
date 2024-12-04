@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.ValueGeneration;
 using microservproreitoria.src.CourseCreation.Entities;
 using microservproreitoria.src.LabsCreation.Entities;
 using microservproreitoria.src.SubjectCreation.Entities;
-using microservproreitoria.src.Teacherppliction.Entities;
+using microservproreitoria.src.TeacherApplication.Entities;
 
 namespace microservproreitoria
 {
@@ -37,37 +37,37 @@ namespace microservproreitoria
         {
             modelBuilder.Entity<Course>()
                 .ToContainer("course")
-                .HasPartitionKey(p => p.id)
+                .HasPartitionKey(p => p.Id)
                 .HasAutoscaleThroughput(400)
                 .HasNoDiscriminator()
-                .Property(p => p.id)
+                .Property(p => p.Id)
                 .HasValueGenerator<GuidValueGenerator>()
                 .IsRequired(true);
 
             modelBuilder.Entity<Lab>()
                 .ToContainer("lab")
-                .HasPartitionKey(p => p.id)
+                .HasPartitionKey(p => p.Id)
                 .HasAutoscaleThroughput(400)
                 .HasNoDiscriminator()
-                .Property(p => p.id)
+                .Property(p => p.Id)
                 .HasValueGenerator<GuidValueGenerator>()
                 .IsRequired(true);
 
             modelBuilder.Entity<Subject>()
                 .ToContainer("subject")
-                .HasPartitionKey(p => p.id)
+                .HasPartitionKey(p => p.Id)
                 .HasAutoscaleThroughput(400)
                 .HasNoDiscriminator()
-                .Property(p => p.id)
+                .Property(p => p.Id)
                 .HasValueGenerator<GuidValueGenerator>()
                 .IsRequired(true);
 
             modelBuilder.Entity<Teacher>()
                 .ToContainer("teacher")
-                .HasPartitionKey(p => p.id)
+                .HasPartitionKey(p => p.Id)
                 .HasAutoscaleThroughput(400)
                 .HasNoDiscriminator()
-                .Property(p => p.id)
+                .Property(p => p.Id)
                 .HasValueGenerator<GuidValueGenerator>()
                 .IsRequired(true);
 
