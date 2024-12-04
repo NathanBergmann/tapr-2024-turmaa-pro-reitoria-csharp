@@ -1,7 +1,8 @@
 # Build results
-bin/
-obj/
-out/
+*/bin/
+*/obj/
+*/out/
+.env
 
 # User-specific files
 *.rsuser
