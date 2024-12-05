@@ -8,6 +8,6 @@ namespace microservproreitoria.src.TeacherApplication.Entities
     public class Teacher
     {
         public Guid Id { get; set; } = Guid.NewGuid();
-        private string Name { get; set; }
+        public string Name { get; set; }
     }
 }
