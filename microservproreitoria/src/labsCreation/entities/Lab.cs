@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using microservproreitoria.src.CourseCreation.Entities;
 using microservproreitoria.src.SubjectCreation.Entities;
 
 namespace microservproreitoria.src.LabsCreation.Entities
