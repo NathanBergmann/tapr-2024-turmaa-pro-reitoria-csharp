@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using microservproreitoria.src.SubjectCreation.Entities;
+
 namespace microservproreitoria.src.CourseCreation.Entities
 {
     public class Course
