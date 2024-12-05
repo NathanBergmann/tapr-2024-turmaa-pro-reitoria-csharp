@@ -6,7 +6,6 @@ public interface ISubjectService
 {
     Task<IEnumerable<Subject>> GetAllAsync();
     Task<Subject> SaveAsync(Subject subject);
-    Task DeleteAsync(Subject subject);
-    Task<Subject> GetByIdAsync(Guid id);
-    Task<Subject> UpdateAsync(Subject subject);
+    Task DeleteAsync(string id);
+    Task<Subject> UpdateAsync(string id, Subject subject);
 }

@@ -11,7 +11,7 @@ namespace microservproreitoria.src.CourseCreation.Entities
         public int SemesterQtd { get; set; }
         public CourseStatus Status { get; set; }
         public GraduateType graduateType { get; set; }
-        public ICollection<Subject> Materials { get; set; } = new List<Subject>();
+        public ICollection<Subject> Subjects { get; set; } = new List<Subject>();
     }
 
 }
