@@ -1,4 +1,8 @@
-namespace microservproreitoria.CourseCreation.Controllers
+using microservproreitoria.src.CourseCreation.Entities;
+using microservproreitoria.src.CourseCreation.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace microservproreitoria.src.CourseCreation.Controllers
 {
     [ApiController]
     [Route("/api/v1/[controller]")]
